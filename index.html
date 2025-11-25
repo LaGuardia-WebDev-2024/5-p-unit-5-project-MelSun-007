@@ -21,12 +21,105 @@ Select TWO Additional Features to Add
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
+.Cape-Cod {
+  font-family: "Ultra", serif;
+  font-weight: 40000;
+  font-style: normal;
+  font-size:15ex;
+  text-align:center;
+color: beige;
+}
+  .invite {text-align:center;
+  color:rgb(173, 209, 255);
+font-weight:1000;
+font-size:6ex;}
 
+
+
+  
+body { background-image: url("https://www.twoscotsabroad.com/wp-content/uploads/2022/05/nobska-lighthouse-Shobha-George-from-Marthas-Vineyard-Tourist-.jpg");
+background-size:cover;}
+
+.main{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
   </style>
 </head>
 <body>
 
- 
+ <h2 class="invite">Let me Invite you to</h2> <h1 class="Cape-Cod">Cape Cod</h1>
 
+
+
+
+ <div class="main"></div>
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://thisisdelmar.com/hs-fs/hubfs/Screenshot%202024-06-14%20at%201.06.11%20PM-1.png?width=832&height=548&name=Screenshot%202024-06-14%20at%201.06.11%20PM-1.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Cape Cod beach</h1>
+      <p>There are many amazing beaches on Cape Cod. While many are super crowded if you know where to go there are some acessable private beaches. </p>
+      <p></p>
+      </div>
+      </div>
+      </div>
+
+      <div class="main"></div>
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://thisisdelmar.com/hs-fs/hubfs/Screenshot%202024-06-14%20at%201.06.11%20PM-1.png?width=832&height=548&name=Screenshot%202024-06-14%20at%201.06.11%20PM-1.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Cape Cod beach</h1>
+      <p>There are many amazing beaches on Cape Cod. While many are super crowded if you know where to go there are some acessable private beaches. </p>
+      <p></p>
+      </div>
+      </div>
+      </div>
 </body>
 </html>
