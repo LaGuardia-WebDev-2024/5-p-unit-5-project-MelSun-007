@@ -21,12 +21,118 @@ Select TWO Additional Features to Add
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
   <style>
+.Cape-Cod {
+  font-family: "Ultra", serif;
+  font-weight: 40000;
+  font-style: normal;
+  font-size:15ex;
+  text-align:center;
+color: beige;
+}
+  .invite {text-align:center;
+  color:rgb(177, 203, 224);
+font-weight:1000;
+font-size:6ex;}
 
-  </style>
+
+
+  
+body { background-image: url("https://www.twoscotsabroad.com/wp-content/uploads/2022/05/nobska-lighthouse-Shobha-George-from-Marthas-Vineyard-Tourist-.jpg");
+background-size:cover;}
+
+.main{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  opacity: 80%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #9a9cb6;
+  color: white;
+  transform: rotateY(180deg);
+}
+ p{font-size: 3.5ex;}
+ 
+ h3{font-size: 5ex;}
+ 
+img{
+  width:200px;
+  margin:20px;
+  border:5px solid skyblue;
+}
+
+.Cape{color: rgb(235, 213, 253);}
+ </style>
 </head>
 <body>
 
- 
+ <h2 class="invite">Let me Invite you to</h2> <h1 class="Cape-Cod">Cape Cod</h1>
 
+
+
+
+ <div class="main">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://newengland.com/wp-content/uploads/WoodEndLightCapeCod_MarkFleming.jpg" alt="Avatar" style="width:400px;height:400px;" class="photo">
+    </div>
+    <div class="flip-card-back">
+      <h3><span class="Cape">Cape Cod beach</span></h3>
+      <p>There are many amazing beaches on Cape Cod. While many are super crowded if you know where to go there are some quiet and acessable private beaches. </p>
+      <p></p>
+      </div>
+      </div>
+      </div>
+
+      
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUPEhMVFRUVFhYVFRUVFxAVFRUVFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLjAuFx8zODMtNygtLisBCgoKDg0OGhAQGi0lICUtLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0uLS0tLy0tLS0rLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xABEEAACAQIDBAcFBgUDAAsAAAABAgADEQQSIQUxQVEGEyJhcYGRFDJCobEHUmLR4fAjM3KCwRdT8RU0Q0Rzg5Kio7LC/8QAGgEAAwEBAQEAAAAAAAAAAAAAAQIDAAQFBv/EAC4RAAICAQMCAwcEAwAAAAAAAAABAhEDEiExE0EEUXEiMlJhgeHwQpGx0RShwf/aAAwDAQACEQMRAD8AybRwI8cCe0cHcQhARARwJh0KOBHAhARbGBAhWjgQrTWGgQsICOBHEFhoa0e0K0cLBZgAIVoWWPlms1AWhAQwkfLNZqBAjgQwsIJBZkgAsILJ6a85I4W2kRzKKG1lcLHCyQLCyzWagAI4WSARiIAgZYgkkyxwsNi0AEhBJKlKTBbRHMdQIFpQurksFjF1NhaSIysVocVoRGwbRWhWitCLYEUO0ILNYOSMCPlkoSFlEGoFHHAQgI4EK067IpDAQwIgIQEVsdDWhARwIVoLGBAj2hARwIAggQgI4EMLNYUgQI4EPLEBBZqGAhR1WSBYrYyQCiHaGEhAQWMkAqwssNfCEIGxqQAEILDCQwkGo1EYWFaShY+SLqDRDkhCnJQsMCZyNRGKcPIIWWKJuw2kNugEwyIghjJUI5N8EZjWkopwggm1IWmyDLDCyXLFabUbSRhI4WSZYssGoFEdo4Ekyx8sFmI7R7STLHyTWLRxgEICEFhATsslQwWPlhAQgIGxkgQI9oYWOBBY1AgQgsICOBFswgIQEQENRFZRMbLHCwwsILF1D1YKpDCxwsNRM2GgMscLJQsILBqDRGqSRUhASRVgcjUMqQgskVJIEknIdRIQsLJJgkIJBrG0EApx7SwRpIjTMylfIslXBCY6oTLC0OclCCF5EuBVBvkgWkB3xyJPlgMImqxmkkRWvvjW5CHaLLGJtkdogskCx8sNi2R2j5ZIFhBIHIG7IQsMU5KFEe0VyDpI8giyyTLFkgsNHFhYQSSBIYWdmonpIgsfLJgkfJNqNpZDaPaS5I/VzWCiICEBJBTjhIHIZIALDVYYWEFiORRIHLDCx8sMCT1FNINoSrDVZKqRXlSHWGTI1WSBZMlOTCnJvMrKf47oqhJIqSYL3QgsbWJ06AVZIEhqskVIjkOokYSPklTbW2aOETNVbtEEpTWxd7chwH4jpOIwf2kP1rZ0pshOiKSrKO5zo58h5Qxi3wJOcYumehhJIEmbsjpHhcT2ab2f/bfsP5Dc39pM1GvFafcbVFcEREEyTJFljIi22QkRZZNliyQ6hKZDlitJskWWBzQVBsjVYWWFeItIPOjoXhpA5I4WLOI3WRJeJQ8fCMK0eR5jEqkyD8VvsXXhEluHFeJaXOHkEopZJdqJtYYd7OQCw1WEBDE9DWcvT8hgsWSSBhzENSvMQ66F0EOSP1cmJUcYaqDum6orxFYJCFOWRThClD1AaCtkj5JaFOF1cVzsZJoq5YQWWCsHLJSkjogmwVWSKIgsMCRlJHTCMg0ElkIaS07yPV32L9PbcIJJFSOqwMbiqdGmatVwiDiefAAbyTyGsoptnO4RRMiTk+lHTilhw1OgQ9QaFzrTQ8QPvt3DQcTpacx0t6cvVvSp3p092UG1SoPxke4v4R8904dkdmBL5bjQDMAF36abtJ1QxPmX7HFl8QuIfuTbU2pUrOXdmJbeWPablfu7hpKB5fnLIwt/iJ/Z+8fwmGuDFhcn6WnRRyNkVHFsul7jkdfTlOv2B9oFelZWbrF+5WJJ/tq7x538JyRoLYX7t7d4vf1PpI3RLNu3aa3PpeBq+TJtcHuex+mGFxFlLdU5+CpYAn8L+63hcHunQFZ80UcSy6A6cju9J1HR/ptiMPZVfsf7dS70/L4k8iBJSx/CWjl+I9utGJnKbH6d4etYVf4LHiTmpHwqDd/cB4mdOpBAIsQdQRqCOYM4Ms5QdNUd+LHCatOwi8jZzHsYurPGc0ssnwdMccI7shJMdVvLC0RDCiJ05vkZ54LggWlDFOS2jgd0dY0uxJ52+4AUR7Q7Rwka2vl6E20/n6kdorSQrFaar5NrrijlRThilH61dwPyJ/xAYMNVdPO35z1rPJUiTqTBGHH3RIWOJGuUHwsZEcfWvYrb+0w0Nqb7l9cOvAWkoFuX0mU2035j0gNtFjv1+UVxY8W/M2WqhRdiBHXFUzuYHwmam1LfDHp4hWPaC689APDSTaLI1xb/AJhhRM5GpDdcX4KxtGGMINlS4/E/6SUrLwaNLII/ViV8Piyd6gf3Ay2jd30kXJo6Fp8wRTi6qTQ1AknIonRTw6nM4bLYEZbXvYi/avx8P0FtRI6YAaoxIADC5OgFkU6nznFdKOnyoDTwrdxrb/KkDv8A6jpyvvD44Sm6iieTNGKuTOh6Q9JKWEGU9ura4pg2tyLt8C/PkJ5J0i6T1cQ+ZnzEXtbREHKmv+Tc+MyMbj2qE3JsTc3JJY82beTKRnpY8Shxz5nl5c0snyXkEzEm5+cno1mJVbm1wNOW6Vv3wh4c9pfEfUSiIFxXVlc63W+hd7n0tylVsTpfInmKh+ZaXqGHpNTYnMKoFSwCvZt+UXtb6TP9nfLbKd3IxIybb/oeSSSJ6T6r2UFyL2UcT3ys41PiR85Yp02FuzxHFRuPjIK47TeJ+plBALxXjE6xAxQktGuy7iRN/YXS2vhj2HKC+q+9TPih3eI175zhP70jNM0mqYU2naPbdg/aLQqALiF6o/7iZnpHvI95PDUDnOzoOtRQ9NldTuZSGU+BE+YqdQqbqSJsbH6SVsO2em7UzxK6q39dM3VvMGc0/DRfubfwXjnf6tz6INO2p3R+rnkfR/pxUz1WxlRq6GkwpBUpDJUsbEqoG/dfUi/K89YwGKpV06yjUWop4q17dxF9D3GcGeM8XvfY6sbhPglyR8sMUhzPqZi9Idtrha2EpNe2JrGkdGJHZstjmAB6xqY1B0J5TnjkcnSRVpLlmuFhqsk6nx9T+ccUvH1Mm8zYUkiHLFkkvV959TH6scz6mFZQNI8rps43EjwJk3tlXixPjBCwws+ndHkJEtDH1F3G3p/kTWwW0rg9YV+h/KYuWGFk5wixjeFPDvwUd5yj/N4R2RTO61vEzACw1U85F432kMmbdbZVNRexPh9BrMV113W7oYvzMceECi1yx1IlwiLfUerKv1m6hTcaQHfemR6kznMklVVtqDfxFvpEnCymqzpqdJG90DyyH6QzhpzVPL9093a/Sctts4ypXbDioxU3ZaasQuQlrBhoGNhxvI9LzewdbXB220ukGFoaPVBYfAnba/IgaDztOP2x9pRF1o01X8TnO3/oXQHxJmLV6OYgD+WfAgH/AOsr1Nj1U1ZVUczTYfMwp+Ghu3f0ZnLPLZbGFids4ms7dbWqOpJazMct+By7hp9Jm3YuTqdd5BOnCdxtDB0aeHp1UqhqjMA6AHs6t+G24L8R3+nQfZ3srC41KxqK5ak4WwqBdCLg2yHkePCXx54TXsJnNkjKL9o8s6hvun0McYVz8B9DPoCj0OwRH8ip4NUYEeiiZGG6G0qqEjKmV6lM6VHb+HUZL3zgG+UHcN8o5tfp/j+yWqPmeMDBv90whgKnL6T3TZfQelTzZxTq33Z1ri3klYX85PszZNB6NOr7LhhnRWI6t2sSoJHac7rxZZdPKA5xW9ng3sVXj9Y7YBv+TPc8R0No1Cx/l3Ogp06OUHuuhsO688w6GL7VjvZKhKHLU9wUR26e9blDpYN6RY+IcuI/7+w0XGW6Zzi7KqHdaF/0RUntw2HjsOtsMlJ1sCeuXCM2a5BGfIDbKF4GaW0jiaNPrB1ej0xfq8LYK1RVa/Y5NC8s/hGWl9z57bZLfsGOuyXP/BnvuP2JWrm5yBjYXDBBuJFxTUX3/vdKVDodUyBtBVBNyKlcpoTl8NLcDEWeT7L6v7Am4xV3foeKrsNzx+UkXo9UO658FvPdtm4jF1EBFf3alam92UG9Ks9I2AUcUPyklPCY/OC2LZksbqGIubaWIAtwlIym03tt67+hnKKrf8+Z4INgPa9ntzynhoYA2Tra7X5WM9K+0/CezUkxBLE1KmRj1lViSUZrnNp8J3c55/sXaQVzUN9CLnUkXBGg85LrZe8UU0p8MLB9H6jMMge/pLaUMThquZDVp1F+KmCGsDxK6EXG46G07jorjAXzhzoq1FBs1g2mquCPP5yh00qAMTdiagLHcN7HNYKABp3Sa8XJ7V9K+42hJ8lTZn2kYqiS1emMSDbKxZaDXA+LKhB9Bu3yh0s6dVMacO/ULSOHqiqp6w1MxFjY9lbDsiYWOYshtqdSNCdTMzq62W1tb39zS1v6Zf8AxcSlqrf5G602qs9LP2rYxhdcNhx4tWb6MJWrfahtEa5MKPBK54d9WcVgsUoQBmF/0EfE4hGUgPY8+1p8oy8Fgr3QdfJ5nWD7S9pNoGoL4Uz3cyecjbp3tU/95UdwpYa3zQmcjg8qG5qFvHOfTT92lv2xOfyaGPhMHwoDzT8z0moVUFmIVRvLEADxJnP7R6YYamcqXqm+uTRQOPaO/wAoW0amFq5HqtRqgnIp1I90sTo2gABuTymKG2exBFOnbPZrrUVgMgfNYnQX7Pqb2EcDNk9McLmUduzDVsosvcRe58r+c2G2rhhT641qeTnmFyeQXeT3WvONYYRyKlKiuSmzXuLdZl5rxHK/nM2ntygtMv1FFqjVf5fU0wtOkLfHl7RO6/DU23AoskZNpduTKzexXTxRVy06WanuzMxVju1Atpx3/KauA6YYVyQ5NI30zi4I53W9vOc3tqtQdValQUjJmcAU6dmzKbEqgJsAd3PuMxcTh+tUGlSRAdSS5JI4WuByMe4g9qz1jFbRw9KmKtSqio3utcEN/Tbf5TmcX9oFBXy06ZqLb3swQk9wIOnj6TL2LinVmfEGtZgqZqdSoTobC/a93tE8ZDtjbahU6nrrsWDLWJYZbW91r7yQR/TAkvUe36HW4HpbhXo9a79Ww0ZCGLX/AAhQcw7/AFtKuE6dYR2YNmRR7rEXzf2rcrODoVn61XQBerGYlDlLkEFtV46geWk7DC9MEZGNalZ1XOv8t89QAKLXW4468LxaT4Dv3ZHtH7Q0BtQpZtd7ta442AvaSDpRS60Y0o+XKEKjLcNqDbWxG+NtTpFhnp9lMzkMyq9Kho3V2AJOls1vTjMRcbhloIa9IuhWmuVTYllADvmv3MfMDSDauPyzO01udRtD7QsOgApB6pO/eijxJ1J8pbx236OJwZ6txcmnmQ2Dr2gd3EabxpOASphhiA7UMuG7P8O+aoezv1a/vXPKwtNnagwNPK2BptnDdpmzABRe4ALG5JC8JLJGLVUUi5Xdo7/GV6BR1/gZyjKDajnuVIFjvvOM6FbWq7Or13NB6iVVzaELbq2JzE2OlnM5Po/iU6wKaeZjaz5mUq2YagLobXO+/CdJsfa6O3UAsWFCoL2FgSikgG5+784sovDvFCTl1OTtV+07MQFwbm+gAqA3J3AAJqZWTpzWpPUvgag6x+sCszqVBVQdDT1BZSb984M7dDU6q1Vp2puMgF1LBWGW4XW/G86Ovj1akHVi4yrnINQkZiLFSQTa7AQT8RONeySWGLNr/Uyrf/qf/wAjcP7JXwHTjEBMqYLMAznR6mgLlgv8v4Qyj0nN7LxBL+zmmcoRqmYkn4yLG/dreRt0ipEVMOtnVtVsKhzHQMqoALnLffpoIJ5ZSXu3QOjDhnUH7Tq4JJwi6b71X8D/ANnOK2binobT9tVUz9bUfqS9v5ubsXtfc/LgNJPVrVL5CVUcAWs2WwIIGa3xAWmycQTXNgcquFPb523LfUawqenhL89QrGlwja/1RxIuBhE7/wCK/D/y5Wxv2hYmvRqUhhUAdSuYVHbKTua2QXsdfKcXt/FH2r+GdFZ77rXzH1/SV62PNAdgqykgXN7lbcBpr++MdznSaQFHG3R6VQ+0fGMyImDUs9ygFSpdst8xXsa8ZGPtFxt7HBg67r1T/wDjxnK0saoviboVAFirfymZLMhtrmJ+gjdGsZ1uHetXKnIzXY20QAHdw1zaTnc2rekd4YI6TZnTjFAMaeEVg1R30d7A1GLsPd5sT5wv9S8Te3sqX/8AEe+7+jlOAwu2mauGFdaaqzALlqZWUk5SQFJPAd2mm8zoqDBGDVFJuuhFjx0N+VpaWacHutgdKDA6d9MK2NwooVMOtPLVV8wZyQQG0sVG8NOT2TRLZ145C1udj8za/wA50NWuamDrORr1lNh4Zyo+VpjgurZxc3uub3rAhhw1HvfKNHI5uqGjFRTo6PAY72enTqq9LOydWyFxnABDKWS4Kggi3PWUttbfNWxc0yUv2Q4F9RcHU8ppdBKmY12c5Uth94p21XK+rA6hHY3HKYPTR8rKisrB1YkBKalSpZRYqN2VVlo4Ypau/wBfK/Qm5tzr/pq+ygqGsVuoNuzpcXgexr4+IEg6PVy9AFmJ1K27NhlOmWw0FiBbulrE4nIUuNCbE8tP1krpld2YAxdK+W2u61hw3y31Q5D0Ez2poHYnOdW1Rlca3+G4tNlsGz0jUoHrcou6AZaiD7+TXMv4lJtxtYzrjli+SLgyt1Q5D0gNkGhsI6qLXud33m/OP1Q7/VvzlaJpmJiXLMDcaA79Brv9TIVeprZyL8jaB1p5fWCW75yblydGqKCoc5Te4DMN+/QSulMkm66EjXlrw1j5iYjflMkazocXiBfq7GxFidLWI3Ax64SmKdjqo7QJsbNqPHd85kUscLAPe/OwMbamMV3DLuyKOWouPyjS2jsBcl/bG0A9IqDe5HyIMwkLDn6mW0wNUgEJv03oD5gm484OKwr02yGxO/S5/wASUVpVD3bJDWqIdNbgc+64PmJJUpkkNe+h4NbXW/qTLCYe+u7QCwA01vxlxdBoB8prrcakYqiqNSTpfXtaDukVfHsyLTIFlN92pOu/1mtjiShAvfT6zBrDX0v42Gb53jLcDJjiSwI5gA+W6WcHVJzfesTfnxIPM6fKUypIA5D9f34SUAooa9+1u13gfrGcXpuhb3NLA1AmWpYaAE9/G1/ECVaZsGA0OVtR4bhJNmYgXJYjsi4WxOY8APlKHXkkaDlx3WhjJVuAWHW4Jtu48ba5ha/KSYfGFQouRrqQT7vKPSVRSLZxmPZCC9zc63+crKNIrMdpSqA0mq30yHNzNNl3f58jOKXfeXfbX6o076FVB5kX3SiIbt2BF72h818xI0ubm53X1MlqbRcXylgCQd+thzPPTnKNW9xy0NvLWObaaROWEu1KmY31111368++Vtpe8B3DT6zSpYa6qwYagG2t92olXatEhyN+XIL8y4LDT97o+hrdkMaevghbGmyqLhdGK8CwBXNa+pt/mBhsQyrUUMbOADqRfW/aHHj6yNQAwvqOPnLlXCqEJAsdOJ5iBLYu+Slg3yurcQQR4g3E2W6TYoEuKrC+89k3tzzA6zHw1TI2bl9ZMzqeG83NiR9YJ6WuLNvZeqdIKtRStWo5BtoFpa2N9TYcZPsnaCs4pa2a9swBs2U2Ohvw3TExNOx03cuI/OLBPlqK3IxdC7Bs9P8AsvqO4qUUAdqmUKCRe4QHjpuU6Sr9peCqIiI9IJUpNUb4Nabu7L7u8AHLrytunJ7I6R1cGc2HIDk5rm/ZIzC2hHC3lOpx20qmM2ecbXt1h62mSLgFRdgdSfiB9Z141F1Xk75549Ko83POeJ6n3kq44/nzMDZWJdVKogK3uLtl3qpPwnjJcZXrFQerAykMLPm3HllE0dgYXNhqbi262oHD9maLYUWsVH6/v6icD5Z6y4OMr4ujqTTqI/HKdL+DeMbB4x0YVqTMCpvobOu7tAjdu/wRz6DG7JR9SB5TIx2ympDNT5gnnYXvb13QmZrvtbD16Zev/CraWqIvZcnhVpD3W/GunG3Cczi8a2c2cgcALbpEawYZtx4rw0O8d2m6IYkcVv5SqySSok0rs6E0V+6PlAbCL90SAYs8Fb0klOq7fD85SgANs9D8IkL7KQ8x4Ey+obkYdjFYTAxOzgpIUHcPMs1hLQ2ZTHD5n6S3icGzMG6zKBbQcSDffLaoOcVhK1JBcHXffW/HQ/KEKWt7b5bCCFdRFdsNlUUYa4aS9cvOM2KEGlm1AthBOUOCY02rcnC+N9/1E6XFbQsjEb7GZtauBQCAcifG94yTRtmUaeDJyX+JivplH1JlzAbOV1ZW+FiN58ID1CroxIsGJAtuubn5yXCYmwY/edj85ZpvH+eZNv2i3S2XTpgncN5JOmnjMLZdIM7FjYKrGaVepnFju8INOiACNNdSbDN6yCg0nY2orbLwiMwuSLre9xvB3D0vNcbNUfEf/b+UqYbDIhuuh5/sy6tXvk5wbYdRC2y11Nz8pXbZQBuL+sv9bC62LpkjajDxGyqha4GnfLGG2WbWZbnwE1RV7z8omr/vSF6qo1lIVSl0y/yxmPDfwtbTQyHG0y9TONM1mA/pGnjJKtVc1S99VA3HgD+cJKoKi3huI+sq5TaSv8o2y3RRp4PNe9rjfq2npCaiSDc87C51sfnqJo03O69oVKpYEZr8r/4i1Lc2owHwxHwkDhx8ZXN++dT1qxsy8vlMnJcoFnO+zFluDc8tIAw1QG+U/KdISvIQbLyEKcg2jnfZn32Os1KeOxIw/swt1fa0IN+1e+vmZfsvKMyLHUpInOEZ+8rLewq3VUgpI7wNZrnGA8f2P0+k5rqhzhC43MfUwOFlVKjcqVgSRceRFjAWqDxB7rjWY/WN95vUwGdjvY+ZM2g2oj2zs0AmshAHFRvBI32mBczoWU8zIjQEdRFbNA1uar6RzWHAW8IopShQBXI4+sXtJ5j0MUUFIFkRfv8Amfygmqef1iiho1jrXPMecdsTzN/DSKKGjWRNXvuEjNQxRTUAjqtpuv4wXe/AcDFFBQbAqKWIO6xvYD84dJbC2/0iimASBoQeKKAwQMWcRRQUYIPEakUU1BBNSMWMUU1ABhrFFMYLWLWKKAIo4MUUJh414opqCODHzRRTUYQMVxFFMYQiNo0UJhWEVoopjH//2Q==" alt="Avatar" style="width:400px;height:400px;" class="photo">
+    </div>
+    <div class="flip-card-back">
+      <h3><span class="Cape">Macks</span></h3>
+      <p>After being at the beach, you could grap some seafood at this outside restaurant. There is ice-cream for afterwards as well.</p>
+      <p></p>
+      </div>
+      </div>
+      </div>
+    </div>
 </body>
 </html>
